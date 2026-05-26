@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<!-- CSSのコード -->
+ table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+
+</head>
+<body>
+  
+</body>
+</html><table>
+  <caption>
+    果物の種類
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">名前</th>
+      <th scope="col">特徴</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">りんご</th>
+      <td>赤くて丸い</td>
+    </tr>
+    <tr>
+      <th scope="row">みかん</th>
+      <td>オレンジ色で丸い</td>
+    </tr>
+    <tr>
+      <th scope="row">ばなな</th>
+      <td>黄色くて細長い</td>
+    </tr>
+  </tbody>
+</table>
