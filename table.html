@@ -1,0 +1,98 @@
+HTML
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタイリッシュな比較表</title>
+    <style>
+        /* 全体のフォントと配置の設定 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* テーブルのスタイル */
+        .custom-table {
+            border-collapse: collapse; /* 枠線を1本にまとめる */
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* 周りの影 */
+            border-radius: 8px 8px 0 0;
+            overflow: hidden; /* 角丸を適用するため */
+        }
+
+        /* テーブルのヘッダー（一番上の行） */
+        .custom-table th {
+            background-color: #009879; /* ヘッダーの背景色（好みに合わせて変更してください） */
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+            padding: 12px 15px;
+        }
+
+        /* テーブルのデータセル（中身） */
+        .custom-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd; /* 行の区切り線 */
+        }
+
+        /* 1行おきに背景色を変える（シマシマ模様） */
+        .custom-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        /* 一番下の行の線 */
+        .custom-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        /* マウスを乗せたときにハイライトする（オプション） */
+        .custom-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>項目</th>
+                <th>プランA</th>
+                <th>プランB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>**月額料金**</td>
+                <td>¥0</td>
+                <td>¥980</td>
+            </tr>
+            <tr>
+                <td>**容量**</td>
+                <td>5 GB</td>
+                <td>50 GB</td>
+            </tr>
+            <tr>
+                <td>**サポート**</td>
+                <td>メールのみ</td>
+                <td>24時間チャット</td>
+            </tr>
+            <tr>
+                <td>**広告表示**</td>
+                <td>あり</td>
+                <td>なし</td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+</html>
